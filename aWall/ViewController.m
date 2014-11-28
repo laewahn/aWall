@@ -33,7 +33,12 @@
         NSArray* unsortedDepartures = [self parseDepartureData:data];
         
         NSSortDescriptor* sortByDepartureTime = [NSSortDescriptor sortDescriptorWithKey:@"departure" ascending:YES];
-        [self setRepresentedObject:[unsortedDepartures sortedArrayUsingDescriptors:@[sortByDepartureTime]]];
+        NSArray* sortedDepartures = [unsortedDepartures sortedArrayUsingDescriptors:@[sortByDepartureTime]];
+        
+        NSPredicate* pendingDeparturesFilter = [NSPredicate predicateWithFormat:@"departure >= %@", [NSDate date]];
+        NSArray* pendingDepartures = [sortedDepartures filteredArrayUsingPredicate:pendingDeparturesFilter];
+        
+        [self setRepresentedObject:pendingDepartures];
     }];
     
     [departureDownloadTask resume];
