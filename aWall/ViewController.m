@@ -30,7 +30,10 @@
     NSURLRequest* departuresInfoRequest = [NSURLRequest requestWithURL:departuresEndpointURL];
     
     NSURLSessionDataTask* departureDownloadTask = [departuresDownloadSession dataTaskWithRequest:departuresInfoRequest completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-        [self setRepresentedObject:[self parseDepartureData:data]];
+        NSArray* unsortedDepartures = [self parseDepartureData:data];
+        
+        NSSortDescriptor* sortByDepartureTime = [NSSortDescriptor sortDescriptorWithKey:@"departure" ascending:YES];
+        [self setRepresentedObject:[unsortedDepartures sortedArrayUsingDescriptors:@[sortByDepartureTime]]];
     }];
     
     [departureDownloadTask resume];
