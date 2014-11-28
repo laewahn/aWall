@@ -29,10 +29,15 @@
     
     [self setRepresentedObject:stubDepartures];
     
-    [self loadAndLogDepartures];
+    [self loadAndUpdateDepartures];
 }
 
-- (void)loadAndLogDepartures
+- (IBAction)refreshDepartureDataButtonPressed:(id)sender
+{
+    [self loadAndUpdateDepartures];
+}
+
+- (void)loadAndUpdateDepartures
 {
     NSURLSession* departuresDownloadSession = [NSURLSession sharedSession];
     
