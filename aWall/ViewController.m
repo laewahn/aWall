@@ -14,6 +14,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    NSTimer* updateTimer = [NSTimer scheduledTimerWithTimeInterval:30 target:self selector:@selector(loadAndUpdateDepartures) userInfo:nil repeats:YES];
+    [self setDeparturesUpdateTimer:updateTimer];
+    
     [self loadAndUpdateDepartures];
 }
 

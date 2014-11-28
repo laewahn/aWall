@@ -10,5 +10,7 @@
 
 @interface ViewController : NSViewController
 
+@property(nonatomic, strong) NSTimer* departuresUpdateTimer;
+
 @end
 
