@@ -830,7 +830,7 @@
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <arrayController id="z7J-3T-I0B" userLabel="Departures Array Controller">
                     <connections>
-                        <binding destination="XfG-lQ-9wD" name="contentArray" keyPath="fetchedDepartures" id="gCr-sF-4sM"/>
+                        <binding destination="XfG-lQ-9wD" name="contentArray" keyPath="representedObject" id="W1t-j7-9Ge"/>
                     </connections>
                 </arrayController>
             </objects>

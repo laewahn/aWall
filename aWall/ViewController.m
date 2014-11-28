@@ -28,7 +28,7 @@
                                     }
                                 ];
     
-    [self setFetchedDepartures:stubDepartures];
+    [self setRepresentedObject:stubDepartures];
 }
 
 - (void)setRepresentedObject:(id)representedObject {
