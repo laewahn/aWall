@@ -13,21 +13,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    NSArray* stubDepartures = @[
-                                @{
-                                    @"line": @"33",
-                                    @"direction" : @"Aachen Fuchserde",
-                                    @"departure" : @"In 20 min."
-                                    },
-                                @{
-                                    @"line": @"12",
-                                    @"direction" : @"Stolberg Bahnhof",
-                                    @"departure" : @"In 22 min."
-                                    }
-                                ];
-    
-    [self setRepresentedObject:stubDepartures];
     
     [self loadAndUpdateDepartures];
 }
