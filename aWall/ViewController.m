@@ -8,12 +8,27 @@
 
 #import "ViewController.h"
 
+
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 
     // Do any additional setup after loading the view.
+    NSArray* stubDepartures = @[
+                                @{
+                                    @"line": @"33",
+                                    @"direction" : @"Aachen Fuchserde",
+                                    @"departure" : @"In 20 min."
+                                    },
+                                @{
+                                    @"line": @"12",
+                                    @"direction" : @"Stolberg Bahnhof",
+                                    @"departure" : @"In 22 min."
+                                    }
+                                ];
+    
+    [self setFetchedDepartures:stubDepartures];
 }
 
 - (void)setRepresentedObject:(id)representedObject {
