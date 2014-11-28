@@ -669,11 +669,11 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="791" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" id="1oB-TO-1zC">
-                                <rect key="frame" x="0.0" y="0.0" width="480" height="227"/>
+                                <rect key="frame" x="0.0" y="0.0" width="791" height="227"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <clipView key="contentView" id="HFJ-aX-nGI">
                                     <rect key="frame" x="1" y="0.0" width="238" height="134"/>
@@ -757,7 +757,7 @@
                                                         </tableCellView>
                                                     </prototypeCellViews>
                                                 </tableColumn>
-                                                <tableColumn width="190" minWidth="10" maxWidth="3.4028234663852886e+38" id="JYU-jb-hkf">
+                                                <tableColumn width="501" minWidth="10" maxWidth="3.4028234663852886e+38" id="JYU-jb-hkf">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Departure">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -771,11 +771,11 @@
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
                                                         <tableCellView id="f25-q5-QzW">
-                                                            <rect key="frame" x="286" y="1" width="173" height="17"/>
+                                                            <rect key="frame" x="286" y="1" width="501" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="XbF-rX-r5o">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="173" height="17"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="501" height="17"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                                     <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="U5c-X3-E80">
                                                                         <dateFormatter key="formatter" timeStyle="medium" id="kgg-rO-B0U"/>
@@ -797,6 +797,7 @@
                                             </tableColumns>
                                             <connections>
                                                 <binding destination="z7J-3T-I0B" name="content" keyPath="arrangedObjects" id="7N1-Eo-A9T"/>
+                                                <binding destination="z7J-3T-I0B" name="sortDescriptors" keyPath="sortDescriptors" previousBinding="7N1-Eo-A9T" id="hHv-Jo-8nH"/>
                                             </connections>
                                         </tableView>
                                     </subviews>
@@ -816,7 +817,7 @@
                                 </tableHeaderView>
                             </scrollView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="O21-EK-TrZ">
-                                <rect key="frame" x="61" y="227" width="401" height="35"/>
+                                <rect key="frame" x="61" y="227" width="712" height="35"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="aWall - Because Aaron and Marcel couldn't." id="YW6-bS-vHJ">
                                     <font key="font" metaFont="system" size="24"/>
@@ -845,7 +846,7 @@
                     </connections>
                 </arrayController>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="230.5" y="655"/>
         </scene>
     </scenes>
     <resources>
