@@ -1,15 +1,15 @@
 //
-//  ViewController.m
+//  AWViewController.m
 //  aWall
 //
 //  Created by Dennis Lewandowski on 28/11/14.
 //  Copyright (c) 2014 laewahn. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "AWViewController.h"
 
 
-@implementation ViewController
+@implementation AWViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		9581B52F1A287BCB00DCA4D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9581B52E1A287BCB00DCA4D3 /* AppDelegate.m */; };
 		9581B5311A287BCB00DCA4D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9581B5301A287BCB00DCA4D3 /* main.m */; };
-		9581B5341A287BCB00DCA4D3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9581B5331A287BCB00DCA4D3 /* ViewController.m */; };
+		9581B5341A287BCB00DCA4D3 /* AWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9581B5331A287BCB00DCA4D3 /* AWViewController.m */; };
 		9581B5361A287BCB00DCA4D3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9581B5351A287BCB00DCA4D3 /* Images.xcassets */; };
 		9581B5391A287BCB00DCA4D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9581B5371A287BCB00DCA4D3 /* Main.storyboard */; };
 		9581B5451A287BCB00DCA4D3 /* aWallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9581B5441A287BCB00DCA4D3 /* aWallTests.m */; };
@@ -34,8 +34,8 @@
 		9581B52D1A287BCB00DCA4D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9581B52E1A287BCB00DCA4D3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9581B5301A287BCB00DCA4D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9581B5321A287BCB00DCA4D3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9581B5331A287BCB00DCA4D3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9581B5321A287BCB00DCA4D3 /* AWViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWViewController.h; sourceTree = "<group>"; };
+		9581B5331A287BCB00DCA4D3 /* AWViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWViewController.m; sourceTree = "<group>"; };
 		9581B5351A287BCB00DCA4D3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9581B5381A287BCB00DCA4D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9581B53E1A287BCB00DCA4D3 /* aWallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = aWallTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,8 +89,8 @@
 			children = (
 				9581B52D1A287BCB00DCA4D3 /* AppDelegate.h */,
 				9581B52E1A287BCB00DCA4D3 /* AppDelegate.m */,
-				9581B5321A287BCB00DCA4D3 /* ViewController.h */,
-				9581B5331A287BCB00DCA4D3 /* ViewController.m */,
+				9581B5321A287BCB00DCA4D3 /* AWViewController.h */,
+				9581B5331A287BCB00DCA4D3 /* AWViewController.m */,
 				95DA40961A2B41F3001D1E20 /* Formatters */,
 				9581B5351A287BCB00DCA4D3 /* Images.xcassets */,
 				9581B5371A287BCB00DCA4D3 /* Main.storyboard */,
@@ -236,7 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9581B5341A287BCB00DCA4D3 /* ViewController.m in Sources */,
+				9581B5341A287BCB00DCA4D3 /* AWViewController.m in Sources */,
 				9581B5311A287BCB00DCA4D3 /* main.m in Sources */,
 				95DA40901A29005B001D1E20 /* DepartureTimeFormatter.m in Sources */,
 				95DA40951A2B403B001D1E20 /* NextDepartureFormatter.m in Sources */,

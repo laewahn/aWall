@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  AWViewController.h
 //  aWall
 //
 //  Created by Dennis Lewandowski on 28/11/14.
@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface ViewController : NSViewController
+@interface AWViewController : NSViewController
 
 @property(nonatomic, strong) NSTimer* departuresUpdateTimer;
 @property(nonatomic, strong) NSDictionary* nextDeparture;
