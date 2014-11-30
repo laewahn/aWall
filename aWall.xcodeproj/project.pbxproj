@@ -88,11 +88,11 @@
 				9581B52E1A287BCB00DCA4D3 /* AppDelegate.m */,
 				9581B5321A287BCB00DCA4D3 /* ViewController.h */,
 				9581B5331A287BCB00DCA4D3 /* ViewController.m */,
+				95DA408E1A29005B001D1E20 /* DepartureTimeFormatter.h */,
+				95DA408F1A29005B001D1E20 /* DepartureTimeFormatter.m */,
 				9581B5351A287BCB00DCA4D3 /* Images.xcassets */,
 				9581B5371A287BCB00DCA4D3 /* Main.storyboard */,
 				9581B52B1A287BCB00DCA4D3 /* Supporting Files */,
-				95DA408E1A29005B001D1E20 /* DepartureTimeFormatter.h */,
-				95DA408F1A29005B001D1E20 /* DepartureTimeFormatter.m */,
 			);
 			path = aWall;
 			sourceTree = "<group>";

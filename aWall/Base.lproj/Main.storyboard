@@ -777,7 +777,7 @@
                                                                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="XbF-rX-r5o">
                                                                     <rect key="frame" x="0.0" y="0.0" width="141" height="50"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="U5c-X3-E80">
+                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" id="U5c-X3-E80">
                                                                         <customFormatter key="formatter" id="keC-b4-ucs" customClass="DepartureTimeFormatter"/>
                                                                         <font key="font" metaFont="system" size="36"/>
                                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -816,26 +816,6 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableHeaderView>
                             </scrollView>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="O21-EK-TrZ">
-                                <rect key="frame" x="61" y="227" width="712" height="35"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="aWall - Because Aaron and Marcel couldn't." id="YW6-bS-vHJ">
-                                    <font key="font" metaFont="system" size="24"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <button verticalHuggingPriority="750" id="bE0-2x-vYf">
-                                <rect key="frame" x="7" y="231" width="47" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="push" bezelStyle="rounded" image="NSRefreshTemplate" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="CvF-KH-Y8i">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="refreshDepartureDataButtonPressed:" target="XfG-lQ-9wD" id="5Pr-5N-h7W"/>
-                                </connections>
-                            </button>
                         </subviews>
                     </view>
                 </viewController>
@@ -849,7 +829,4 @@
             <point key="canvasLocation" x="230.5" y="655"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="NSRefreshTemplate" width="11" height="15"/>
-    </resources>
 </document>
