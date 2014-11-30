@@ -59,4 +59,18 @@
     XCTAssertEqualObjects([testFormatter stringForObjectValue:twoMinutesLater], @"2 minutes");
 }
 
+- (void)testItRetursTimeInSingularWhenDepartureIsInOneMinute
+{
+    NSDate* oneMinuteLater = [referenceDate dateByAddingTimeInterval:(NSTimeInterval)60];
+    
+    XCTAssertEqualObjects([testFormatter stringForObjectValue:oneMinuteLater], @"1 minute");
+}
+
+- (void)testItReturnsLessThanAMinuteIfDepartureIsInLessThanOneMinute
+{
+    NSDate* lessThanOneMinute = [referenceDate dateByAddingTimeInterval:(NSTimeInterval)58];
+    
+    XCTAssertEqualObjects([testFormatter stringForObjectValue:lessThanOneMinute], @"less than one minute");
+}
+
 @end

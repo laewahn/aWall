@@ -43,10 +43,13 @@
     }
     
     NSDate* theDate = (NSDate *)obj;
-    NSTimeInterval remainingMinutes = [theDate timeIntervalSinceDate:_referenceDate] / 60;
+    NSTimeInterval remainingMinutes = floor([theDate timeIntervalSinceDate:_referenceDate] / 60);
     
-    if (remainingMinutes < 60) {
-        return [NSString stringWithFormat:@"%.0f minutes", remainingMinutes];
+    if (remainingMinutes == 0) {
+        return @"less than one minute";
+    } else if (remainingMinutes < 60) {
+        NSString* unitString = (remainingMinutes <= 1) ? @"minute" : @"minutes";
+        return [NSString stringWithFormat:@"%.0f %@", remainingMinutes, unitString];
     }
     
     NSDateFormatter* defaultFormatter = [[NSDateFormatter alloc] init];
