@@ -1,20 +1,20 @@
 //
-//  ViewController.m
+//  AWViewController.m
 //  aWall
 //
 //  Created by Dennis Lewandowski on 28/11/14.
 //  Copyright (c) 2014 laewahn. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "AWViewController.h"
 
 
-@implementation ViewController
+@implementation AWViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSTimer* updateTimer = [NSTimer scheduledTimerWithTimeInterval:30 target:self selector:@selector(loadAndUpdateDepartures) userInfo:nil repeats:YES];
+    NSTimer* updateTimer = [NSTimer scheduledTimerWithTimeInterval:20 target:self selector:@selector(loadAndUpdateDepartures) userInfo:nil repeats:YES];
     [self setDeparturesUpdateTimer:updateTimer];
     
     [self loadAndUpdateDepartures];
@@ -41,7 +41,11 @@
         NSPredicate* pendingDeparturesFilter = [NSPredicate predicateWithFormat:@"departure >= %@", [NSDate date]];
         NSArray* pendingDepartures = [sortedDepartures filteredArrayUsingPredicate:pendingDeparturesFilter];
         
-        [self performSelectorOnMainThread:@selector(setRepresentedObject:) withObject:pendingDepartures waitUntilDone:NO];
+        NSDictionary* nextDeparture = [pendingDepartures firstObject];
+        NSArray* departuresForList = [pendingDepartures subarrayWithRange:NSMakeRange(1, [pendingDepartures count] -1)];
+        
+        [self performSelectorOnMainThread:@selector(setRepresentedObject:) withObject:departuresForList waitUntilDone:YES];
+        [self performSelectorOnMainThread:@selector(setNextDeparture:) withObject:nextDeparture waitUntilDone:YES];
     }];
     
     [departureDownloadTask resume];
