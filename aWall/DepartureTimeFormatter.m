@@ -15,16 +15,6 @@
 
 @implementation DepartureTimeFormatter
 
-- (id)initWithCoder:(NSCoder *)aDecoder
-{
-    return [self initWithReferenceDate:[NSDate date]];
-}
-
-- (instancetype)init
-{
-    return [self initWithReferenceDate:[NSDate date]];
-}
-
 - (instancetype)initWithReferenceDate:(NSDate *)referenceDate
 {
     self = [super init];
@@ -36,6 +26,11 @@
     return self;
 }
 
+- (NSDate *)referenceDate
+{
+    return _referenceDate ?: [NSDate date];
+}
+
 - (NSString *)stringForObjectValue:(id)obj
 {
     if (![obj isKindOfClass:[NSDate class]]) {
@@ -43,7 +38,8 @@
     }
     
     NSDate* theDate = (NSDate *)obj;
-    NSTimeInterval remainingMinutes = floor([theDate timeIntervalSinceDate:_referenceDate] / 60);
+    
+    NSTimeInterval remainingMinutes = floor([theDate timeIntervalSinceDate:[self referenceDate]] / 60);
     
     if (remainingMinutes == 0) {
         return [self capitalized] ? @"Less than one minute" : @"less than one minute";
