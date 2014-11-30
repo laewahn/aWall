@@ -41,8 +41,11 @@
         NSPredicate* pendingDeparturesFilter = [NSPredicate predicateWithFormat:@"departure >= %@", [NSDate date]];
         NSArray* pendingDepartures = [sortedDepartures filteredArrayUsingPredicate:pendingDeparturesFilter];
         
-        [self performSelectorOnMainThread:@selector(setRepresentedObject:) withObject:pendingDepartures waitUntilDone:NO];
-        [self performSelectorOnMainThread:@selector(setNextDeparture:) withObject:[pendingDepartures firstObject] waitUntilDone:YES];
+        NSDictionary* nextDeparture = [pendingDepartures firstObject];
+        NSArray* departuresForList = [pendingDepartures subarrayWithRange:NSMakeRange(1, [pendingDepartures count] -1)];
+        
+        [self performSelectorOnMainThread:@selector(setRepresentedObject:) withObject:departuresForList waitUntilDone:NO];
+        [self performSelectorOnMainThread:@selector(setNextDeparture:) withObject:nextDeparture waitUntilDone:YES];
     }];
     
     [departureDownloadTask resume];
