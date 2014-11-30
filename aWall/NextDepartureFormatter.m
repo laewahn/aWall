@@ -10,6 +10,11 @@
 
 #import "DepartureTimeFormatter.h"
 
+@interface NextDepartureFormatter () {
+    NSFormatter* _departureFormatter;
+}
+@end
+
 @implementation NextDepartureFormatter
 
 - (NSString *)stringForObjectValue:(id)obj
@@ -20,11 +25,19 @@
     
     NSDictionary* next = (NSDictionary *)obj;
     
-    DepartureTimeFormatter* timeFormatter = [[DepartureTimeFormatter alloc] init];
-    NSString* formattedDeparture = [timeFormatter stringForObjectValue:next[@"departure"]];
+    NSString* formattedDeparture = [self.departureFormatter stringForObjectValue:next[@"departure"]];
     NSString* formattedString = [NSString stringWithFormat:@"Next:\t%@ - %@\n\t\t\t\tin %@", next[@"line"], next[@"direction"], formattedDeparture];
     
     return formattedString;
+}
+
+- (NSFormatter *)departureFormatter
+{
+    if (_departureFormatter == nil) {
+        _departureFormatter = [[DepartureTimeFormatter alloc] init];
+    }
+    
+    return _departureFormatter;
 }
 
 @end

@@ -10,6 +10,7 @@
 
 @interface DepartureTimeFormatter() {
     NSDate* _referenceDate;
+    NSFormatter* _defaultFormatter;
 }
 @end
 
@@ -31,6 +32,20 @@
     return _referenceDate ?: [NSDate date];
 }
 
+- (NSFormatter *)defaultFormatter
+{
+    if (_defaultFormatter == nil) {
+        
+        NSDateFormatter* defaultFormatter = [[NSDateFormatter alloc] init];
+        [defaultFormatter setTimeStyle:NSDateFormatterMediumStyle];
+        [defaultFormatter setDateStyle:NSDateFormatterNoStyle];
+
+        _defaultFormatter = defaultFormatter;
+    }
+    
+    return _defaultFormatter;
+}
+
 - (NSString *)stringForObjectValue:(id)obj
 {
     if (![obj isKindOfClass:[NSDate class]]) {
@@ -48,11 +63,7 @@
         return [NSString stringWithFormat:@"%.0f %@", remainingMinutes, unitString];
     }
     
-    NSDateFormatter* defaultFormatter = [[NSDateFormatter alloc] init];
-    [defaultFormatter setTimeStyle:NSDateFormatterMediumStyle];
-    [defaultFormatter setDateStyle:NSDateFormatterNoStyle];
-    
-    return [defaultFormatter stringForObjectValue:theDate];
+    return [self.defaultFormatter stringForObjectValue:theDate];
 }
 
 @end
