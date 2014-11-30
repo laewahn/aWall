@@ -669,11 +669,11 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="AWViewController" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="791" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="791" height="513"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <scrollView autohidesScrollers="YES" horizontalLineScroll="52" horizontalPageScroll="10" verticalLineScroll="52" verticalPageScroll="10" usesPredominantAxisScrolling="NO" id="1oB-TO-1zC">
-                                <rect key="frame" x="0.0" y="0.0" width="791" height="209"/>
+                                <rect key="frame" x="0.0" y="0.0" width="791" height="410"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <clipView key="contentView" id="HFJ-aX-nGI">
                                     <rect key="frame" x="1" y="0.0" width="238" height="134"/>
@@ -817,11 +817,13 @@
                                 </tableHeaderView>
                             </scrollView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="srk-JZ-leP">
-                                <rect key="frame" x="18" y="217" width="755" height="46"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" placeholderString="Next:" id="5kk-JE-tsn">
+                                <rect key="frame" x="18" y="418" width="755" height="88"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="5kk-JE-tsn">
                                     <customFormatter key="formatter" id="6P6-ti-SDZ" customClass="NextDepartureFormatter"/>
-                                    <font key="font" metaFont="system" size="18"/>
+                                    <font key="font" metaFont="system" size="36"/>
+                                    <string key="placeholderString">Next:
+in:</string>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -839,7 +841,7 @@
                     </connections>
                 </arrayController>
             </objects>
-            <point key="canvasLocation" x="230.5" y="655"/>
+            <point key="canvasLocation" x="230.5" y="776.5"/>
         </scene>
     </scenes>
 </document>

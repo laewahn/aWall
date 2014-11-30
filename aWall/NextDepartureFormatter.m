@@ -22,7 +22,7 @@
     
     DepartureTimeFormatter* timeFormatter = [[DepartureTimeFormatter alloc] init];
     NSString* formattedDeparture = [timeFormatter stringForObjectValue:next[@"departure"]];
-    NSString* formattedString = [NSString stringWithFormat:@"Next:\t%@ - %@\n\t\tin %@", next[@"line"], next[@"direction"], formattedDeparture];
+    NSString* formattedString = [NSString stringWithFormat:@"Next:\t%@ - %@\n\t\t\t\tin %@", next[@"line"], next[@"direction"], formattedDeparture];
     
     return formattedString;
 }
