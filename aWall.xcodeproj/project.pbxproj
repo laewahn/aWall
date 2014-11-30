@@ -15,6 +15,7 @@
 		9581B5451A287BCB00DCA4D3 /* aWallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9581B5441A287BCB00DCA4D3 /* aWallTests.m */; };
 		95DA40901A29005B001D1E20 /* DepartureTimeFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DA408F1A29005B001D1E20 /* DepartureTimeFormatter.m */; };
 		95DA40921A2901C1001D1E20 /* DepartureTimeFormatterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DA40911A2901C0001D1E20 /* DepartureTimeFormatterTests.m */; };
+		95DA40951A2B403B001D1E20 /* NextDepartureFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DA40941A2B403B001D1E20 /* NextDepartureFormatter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		95DA408E1A29005B001D1E20 /* DepartureTimeFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DepartureTimeFormatter.h; sourceTree = "<group>"; };
 		95DA408F1A29005B001D1E20 /* DepartureTimeFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DepartureTimeFormatter.m; sourceTree = "<group>"; };
 		95DA40911A2901C0001D1E20 /* DepartureTimeFormatterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DepartureTimeFormatterTests.m; sourceTree = "<group>"; };
+		95DA40931A2B403B001D1E20 /* NextDepartureFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextDepartureFormatter.h; sourceTree = "<group>"; };
+		95DA40941A2B403B001D1E20 /* NextDepartureFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextDepartureFormatter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,8 +91,7 @@
 				9581B52E1A287BCB00DCA4D3 /* AppDelegate.m */,
 				9581B5321A287BCB00DCA4D3 /* ViewController.h */,
 				9581B5331A287BCB00DCA4D3 /* ViewController.m */,
-				95DA408E1A29005B001D1E20 /* DepartureTimeFormatter.h */,
-				95DA408F1A29005B001D1E20 /* DepartureTimeFormatter.m */,
+				95DA40961A2B41F3001D1E20 /* Formatters */,
 				9581B5351A287BCB00DCA4D3 /* Images.xcassets */,
 				9581B5371A287BCB00DCA4D3 /* Main.storyboard */,
 				9581B52B1A287BCB00DCA4D3 /* Supporting Files */,
@@ -122,6 +124,17 @@
 				9581B5431A287BCB00DCA4D3 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		95DA40961A2B41F3001D1E20 /* Formatters */ = {
+			isa = PBXGroup;
+			children = (
+				95DA408E1A29005B001D1E20 /* DepartureTimeFormatter.h */,
+				95DA408F1A29005B001D1E20 /* DepartureTimeFormatter.m */,
+				95DA40931A2B403B001D1E20 /* NextDepartureFormatter.h */,
+				95DA40941A2B403B001D1E20 /* NextDepartureFormatter.m */,
+			);
+			name = Formatters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +239,7 @@
 				9581B5341A287BCB00DCA4D3 /* ViewController.m in Sources */,
 				9581B5311A287BCB00DCA4D3 /* main.m in Sources */,
 				95DA40901A29005B001D1E20 /* DepartureTimeFormatter.m in Sources */,
+				95DA40951A2B403B001D1E20 /* NextDepartureFormatter.m in Sources */,
 				9581B52F1A287BCB00DCA4D3 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

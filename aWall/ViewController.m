@@ -42,6 +42,7 @@
         NSArray* pendingDepartures = [sortedDepartures filteredArrayUsingPredicate:pendingDeparturesFilter];
         
         [self performSelectorOnMainThread:@selector(setRepresentedObject:) withObject:pendingDepartures waitUntilDone:NO];
+        [self performSelectorOnMainThread:@selector(setNextDeparture:) withObject:[pendingDepartures firstObject] waitUntilDone:YES];
     }];
     
     [departureDownloadTask resume];
