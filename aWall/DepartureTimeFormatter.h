@@ -12,4 +12,6 @@
 
 - (instancetype)initWithReferenceDate:(NSDate *)referenceDate;
 
+@property(nonatomic, assign) BOOL capitalized;
+
 @end

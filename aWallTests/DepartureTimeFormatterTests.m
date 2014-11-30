@@ -73,4 +73,13 @@
     XCTAssertEqualObjects([testFormatter stringForObjectValue:lessThanOneMinute], @"less than one minute");
 }
 
+- (void)testLessThanOneMinuteCanBeCapitalized
+{
+    XCTAssertNoThrow([testFormatter setCapitalized:YES]);
+    
+    NSDate* lessThanOneMinute = [referenceDate dateByAddingTimeInterval:30];
+    
+    XCTAssertEqualObjects([testFormatter stringForObjectValue:lessThanOneMinute], @"Less than one minute");
+}
+
 @end

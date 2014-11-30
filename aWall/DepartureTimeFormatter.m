@@ -46,7 +46,7 @@
     NSTimeInterval remainingMinutes = floor([theDate timeIntervalSinceDate:_referenceDate] / 60);
     
     if (remainingMinutes == 0) {
-        return @"less than one minute";
+        return [self capitalized] ? @"Less than one minute" : @"less than one minute";
     } else if (remainingMinutes < 60) {
         NSString* unitString = (remainingMinutes <= 1) ? @"minute" : @"minutes";
         return [NSString stringWithFormat:@"%.0f %@", remainingMinutes, unitString];

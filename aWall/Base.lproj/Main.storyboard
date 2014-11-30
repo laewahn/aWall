@@ -778,7 +778,11 @@
                                                                     <rect key="frame" x="0.0" y="0.0" width="141" height="50"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                                     <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" id="U5c-X3-E80">
-                                                                        <customFormatter key="formatter" id="keC-b4-ucs" customClass="DepartureTimeFormatter"/>
+                                                                        <customFormatter key="formatter" id="keC-b4-ucs" customClass="DepartureTimeFormatter">
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="capitalized" value="YES"/>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                        </customFormatter>
                                                                         <font key="font" metaFont="system" size="36"/>
                                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
