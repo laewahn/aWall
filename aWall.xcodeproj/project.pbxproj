@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		956A848E1A2CF7020034DD06 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 956A848D1A2CF7020034DD06 /* AppDelegate.m */; };
 		956A84901A2CF7020034DD06 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 956A848F1A2CF7020034DD06 /* main.m */; };
-		956A84931A2CF7020034DD06 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 956A84921A2CF7020034DD06 /* ViewController.m */; };
 		956A84951A2CF7020034DD06 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 956A84941A2CF7020034DD06 /* Images.xcassets */; };
 		956A84981A2CF7020034DD06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 956A84961A2CF7020034DD06 /* Main.storyboard */; };
 		956A84A41A2CF7020034DD06 /* iSeag_MenuIconTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 956A84A31A2CF7020034DD06 /* iSeag_MenuIconTests.m */; };
@@ -47,8 +46,6 @@
 		956A848C1A2CF7020034DD06 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		956A848D1A2CF7020034DD06 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		956A848F1A2CF7020034DD06 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		956A84911A2CF7020034DD06 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		956A84921A2CF7020034DD06 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		956A84941A2CF7020034DD06 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		956A84971A2CF7020034DD06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		956A849D1A2CF7020034DD06 /* iSeag MenuIconTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iSeag MenuIconTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,8 +107,6 @@
 			children = (
 				956A848C1A2CF7020034DD06 /* AppDelegate.h */,
 				956A848D1A2CF7020034DD06 /* AppDelegate.m */,
-				956A84911A2CF7020034DD06 /* ViewController.h */,
-				956A84921A2CF7020034DD06 /* ViewController.m */,
 				956A84941A2CF7020034DD06 /* Images.xcassets */,
 				956A84961A2CF7020034DD06 /* Main.storyboard */,
 				956A848A1A2CF7020034DD06 /* Supporting Files */,
@@ -379,7 +374,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				956A84931A2CF7020034DD06 /* ViewController.m in Sources */,
 				956A84901A2CF7020034DD06 /* main.m in Sources */,
 				956A848E1A2CF7020034DD06 /* AppDelegate.m in Sources */,
 			);
