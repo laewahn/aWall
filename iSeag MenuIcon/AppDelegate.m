@@ -23,6 +23,15 @@
     [menuIconImage setSize:NSMakeSize([systemStatusBar thickness] - 1, [systemStatusBar thickness] - 1)];
     
     [self.statusItem.button setImage:menuIconImage];
+    
+    NSMenu* loadingDeparturesMenu = [[NSMenu alloc] initWithTitle:@"loadingDataMenu"];
+
+    NSMenuItem* loadingItem = [[NSMenuItem alloc] initWithTitle:@"Loading departures…" action:nil keyEquivalent:@""];
+    [loadingItem setEnabled:NO];
+    
+    [loadingDeparturesMenu addItem:loadingItem];
+    
+    [self.statusItem setMenu:loadingDeparturesMenu];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
