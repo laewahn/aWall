@@ -9,9 +9,24 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>iSeag MenuIcon.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>956A84871A2CF7020034DD06</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>956A849C1A2CF7020034DD06</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>9581B5271A287BCB00DCA4D3</key>
 		<dict>
 			<key>primary</key>

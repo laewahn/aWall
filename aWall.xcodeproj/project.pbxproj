@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		956A848E1A2CF7020034DD06 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 956A848D1A2CF7020034DD06 /* AppDelegate.m */; };
+		956A84901A2CF7020034DD06 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 956A848F1A2CF7020034DD06 /* main.m */; };
+		956A84931A2CF7020034DD06 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 956A84921A2CF7020034DD06 /* ViewController.m */; };
+		956A84951A2CF7020034DD06 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 956A84941A2CF7020034DD06 /* Images.xcassets */; };
+		956A84981A2CF7020034DD06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 956A84961A2CF7020034DD06 /* Main.storyboard */; };
+		956A84A41A2CF7020034DD06 /* iSeag_MenuIconTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 956A84A31A2CF7020034DD06 /* iSeag_MenuIconTests.m */; };
 		9581B52F1A287BCB00DCA4D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9581B52E1A287BCB00DCA4D3 /* AppDelegate.m */; };
 		9581B5311A287BCB00DCA4D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9581B5301A287BCB00DCA4D3 /* main.m */; };
 		9581B5341A287BCB00DCA4D3 /* AWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9581B5331A287BCB00DCA4D3 /* AWViewController.m */; };
@@ -19,6 +25,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		956A849E1A2CF7020034DD06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9581B5201A287BCB00DCA4D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 956A84871A2CF7020034DD06;
+			remoteInfo = "iSeag MenuIcon";
+		};
 		9581B53F1A287BCB00DCA4D3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9581B5201A287BCB00DCA4D3 /* Project object */;
@@ -29,6 +42,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		956A84881A2CF7020034DD06 /* iSeag MenuIcon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iSeag MenuIcon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		956A848B1A2CF7020034DD06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		956A848C1A2CF7020034DD06 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		956A848D1A2CF7020034DD06 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		956A848F1A2CF7020034DD06 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		956A84911A2CF7020034DD06 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		956A84921A2CF7020034DD06 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		956A84941A2CF7020034DD06 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		956A84971A2CF7020034DD06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		956A849D1A2CF7020034DD06 /* iSeag MenuIconTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iSeag MenuIconTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		956A84A21A2CF7020034DD06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		956A84A31A2CF7020034DD06 /* iSeag_MenuIconTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iSeag_MenuIconTests.m; sourceTree = "<group>"; };
 		9581B5281A287BCB00DCA4D3 /* aWall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aWall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9581B52C1A287BCB00DCA4D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9581B52D1A287BCB00DCA4D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -49,6 +74,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		956A84851A2CF7020034DD06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		956A849A1A2CF7020034DD06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9581B5251A287BCB00DCA4D3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -66,11 +105,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		956A84891A2CF7020034DD06 /* iSeag MenuIcon */ = {
+			isa = PBXGroup;
+			children = (
+				956A848C1A2CF7020034DD06 /* AppDelegate.h */,
+				956A848D1A2CF7020034DD06 /* AppDelegate.m */,
+				956A84911A2CF7020034DD06 /* ViewController.h */,
+				956A84921A2CF7020034DD06 /* ViewController.m */,
+				956A84941A2CF7020034DD06 /* Images.xcassets */,
+				956A84961A2CF7020034DD06 /* Main.storyboard */,
+				956A848A1A2CF7020034DD06 /* Supporting Files */,
+			);
+			path = "iSeag MenuIcon";
+			sourceTree = "<group>";
+		};
+		956A848A1A2CF7020034DD06 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				956A848B1A2CF7020034DD06 /* Info.plist */,
+				956A848F1A2CF7020034DD06 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		956A84A01A2CF7020034DD06 /* iSeag MenuIconTests */ = {
+			isa = PBXGroup;
+			children = (
+				956A84A31A2CF7020034DD06 /* iSeag_MenuIconTests.m */,
+				956A84A11A2CF7020034DD06 /* Supporting Files */,
+			);
+			path = "iSeag MenuIconTests";
+			sourceTree = "<group>";
+		};
+		956A84A11A2CF7020034DD06 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				956A84A21A2CF7020034DD06 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		9581B51F1A287BCB00DCA4D3 = {
 			isa = PBXGroup;
 			children = (
 				9581B52A1A287BCB00DCA4D3 /* aWall */,
 				9581B5411A287BCB00DCA4D3 /* aWallTests */,
+				956A84891A2CF7020034DD06 /* iSeag MenuIcon */,
+				956A84A01A2CF7020034DD06 /* iSeag MenuIconTests */,
 				9581B5291A287BCB00DCA4D3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -80,6 +161,8 @@
 			children = (
 				9581B5281A287BCB00DCA4D3 /* aWall.app */,
 				9581B53E1A287BCB00DCA4D3 /* aWallTests.xctest */,
+				956A84881A2CF7020034DD06 /* iSeag MenuIcon.app */,
+				956A849D1A2CF7020034DD06 /* iSeag MenuIconTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,6 +223,41 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		956A84871A2CF7020034DD06 /* iSeag MenuIcon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 956A84A91A2CF7020034DD06 /* Build configuration list for PBXNativeTarget "iSeag MenuIcon" */;
+			buildPhases = (
+				956A84841A2CF7020034DD06 /* Sources */,
+				956A84851A2CF7020034DD06 /* Frameworks */,
+				956A84861A2CF7020034DD06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iSeag MenuIcon";
+			productName = "iSeag MenuIcon";
+			productReference = 956A84881A2CF7020034DD06 /* iSeag MenuIcon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		956A849C1A2CF7020034DD06 /* iSeag MenuIconTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 956A84AA1A2CF7020034DD06 /* Build configuration list for PBXNativeTarget "iSeag MenuIconTests" */;
+			buildPhases = (
+				956A84991A2CF7020034DD06 /* Sources */,
+				956A849A1A2CF7020034DD06 /* Frameworks */,
+				956A849B1A2CF7020034DD06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				956A849F1A2CF7020034DD06 /* PBXTargetDependency */,
+			);
+			name = "iSeag MenuIconTests";
+			productName = "iSeag MenuIconTests";
+			productReference = 956A849D1A2CF7020034DD06 /* iSeag MenuIconTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		9581B5271A287BCB00DCA4D3 /* aWall */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9581B5481A287BCB00DCA4D3 /* Build configuration list for PBXNativeTarget "aWall" */;
@@ -184,6 +302,13 @@
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = laewahn;
 				TargetAttributes = {
+					956A84871A2CF7020034DD06 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					956A849C1A2CF7020034DD06 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 956A84871A2CF7020034DD06;
+					};
 					9581B5271A287BCB00DCA4D3 = {
 						CreatedOnToolsVersion = 6.1;
 					};
@@ -208,11 +333,29 @@
 			targets = (
 				9581B5271A287BCB00DCA4D3 /* aWall */,
 				9581B53D1A287BCB00DCA4D3 /* aWallTests */,
+				956A84871A2CF7020034DD06 /* iSeag MenuIcon */,
+				956A849C1A2CF7020034DD06 /* iSeag MenuIconTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		956A84861A2CF7020034DD06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				956A84951A2CF7020034DD06 /* Images.xcassets in Resources */,
+				956A84981A2CF7020034DD06 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		956A849B1A2CF7020034DD06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9581B5261A287BCB00DCA4D3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -232,6 +375,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		956A84841A2CF7020034DD06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				956A84931A2CF7020034DD06 /* ViewController.m in Sources */,
+				956A84901A2CF7020034DD06 /* main.m in Sources */,
+				956A848E1A2CF7020034DD06 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		956A84991A2CF7020034DD06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				956A84A41A2CF7020034DD06 /* iSeag_MenuIconTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9581B5241A287BCB00DCA4D3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -256,6 +417,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		956A849F1A2CF7020034DD06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 956A84871A2CF7020034DD06 /* iSeag MenuIcon */;
+			targetProxy = 956A849E1A2CF7020034DD06 /* PBXContainerItemProxy */;
+		};
 		9581B5401A287BCB00DCA4D3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9581B5271A287BCB00DCA4D3 /* aWall */;
@@ -264,6 +430,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		956A84961A2CF7020034DD06 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				956A84971A2CF7020034DD06 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		9581B5371A287BCB00DCA4D3 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -275,6 +449,68 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		956A84A51A2CF7020034DD06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iSeag MenuIcon/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		956A84A61A2CF7020034DD06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "iSeag MenuIcon/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		956A84A71A2CF7020034DD06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iSeag MenuIconTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iSeag MenuIcon.app/Contents/MacOS/iSeag MenuIcon";
+			};
+			name = Debug;
+		};
+		956A84A81A2CF7020034DD06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iSeag MenuIconTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iSeag MenuIcon.app/Contents/MacOS/iSeag MenuIcon";
+			};
+			name = Release;
+		};
 		9581B5461A287BCB00DCA4D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -412,6 +648,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		956A84A91A2CF7020034DD06 /* Build configuration list for PBXNativeTarget "iSeag MenuIcon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				956A84A51A2CF7020034DD06 /* Debug */,
+				956A84A61A2CF7020034DD06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		956A84AA1A2CF7020034DD06 /* Build configuration list for PBXNativeTarget "iSeag MenuIconTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				956A84A71A2CF7020034DD06 /* Debug */,
+				956A84A81A2CF7020034DD06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		9581B5231A287BCB00DCA4D3 /* Build configuration list for PBXProject "aWall" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
