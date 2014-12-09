@@ -19,9 +19,9 @@
     [self loadAndUpdateDepartures];
 }
 
-- (IBAction)refreshDepartureDataButtonPressed:(id)sender
+- (void)loadAndUpdateDepartures
 {
-    [self loadAndUpdateDepartures];
+    [self.downloader downloadDeparturesForStopWithID:@"100625"];
 }
 
 - (IVUDepartureDownloader *)downloader
@@ -35,6 +35,7 @@
     
     return _downloader;
 }
+
 
 - (void)downloader:(IVUDepartureDownloader *)downloader finishedLoadingDeparturesData:(NSData *)data
 {
@@ -53,10 +54,6 @@
     [self performSelectorOnMainThread:@selector(setNextDeparture:) withObject:nextDeparture waitUntilDone:YES];
 }
 
-- (void)loadAndUpdateDepartures
-{
-    [self.downloader downloadDeparturesForStopWithID:@"100625"];
-}
 
 - (NSArray *)parseDepartureData:(NSData *)downloadData
 {
