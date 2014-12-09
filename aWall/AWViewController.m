@@ -24,6 +24,10 @@
     [self.downloader downloadDeparturesForStopWithID:@"100625"];
 }
 
+
+# pragma mark -
+# pragma mark Property implementation
+
 - (IVUDepartureDownloader *)downloader
 {
     if (_downloader == nil) {
@@ -36,6 +40,9 @@
     return _downloader;
 }
 
+
+# pragma mark -
+# pragma mark IVUDepartureDownloaderDelegate implementation
 
 - (void)downloader:(IVUDepartureDownloader *)downloader finishedLoadingDeparturesData:(NSData *)data
 {
@@ -54,6 +61,9 @@
     [self performSelectorOnMainThread:@selector(setNextDeparture:) withObject:nextDeparture waitUntilDone:YES];
 }
 
+
+# pragma mark -
+# pragma mark Data parsing
 
 - (NSArray *)parseDepartureData:(NSData *)downloadData
 {
