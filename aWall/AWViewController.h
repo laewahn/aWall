@@ -8,7 +8,9 @@
 
 #import <Cocoa/Cocoa.h>
 
-#import "IVUDepartureDownloader.h"
+#import "IVUDepartureDownloaderDelegate.h"
+
+@class IVUDepartureDownloader;
 
 @interface AWViewController : NSViewController<IVUDepartureDownloaderDelegate>
 

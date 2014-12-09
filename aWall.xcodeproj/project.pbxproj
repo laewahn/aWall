@@ -66,6 +66,7 @@
 		9581B5441A287BCB00DCA4D3 /* aWallTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = aWallTests.m; sourceTree = "<group>"; };
 		95BBBEB31A3722C700AB3454 /* IVUDepartureDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVUDepartureDownloader.h; sourceTree = "<group>"; };
 		95BBBEB41A3722C700AB3454 /* IVUDepartureDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVUDepartureDownloader.m; sourceTree = "<group>"; };
+		95BBBEB61A3727CE00AB3454 /* IVUDepartureDownloaderDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IVUDepartureDownloaderDelegate.h; sourceTree = "<group>"; };
 		95DA408E1A29005B001D1E20 /* DepartureTimeFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DepartureTimeFormatter.h; sourceTree = "<group>"; };
 		95DA408F1A29005B001D1E20 /* DepartureTimeFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DepartureTimeFormatter.m; sourceTree = "<group>"; };
 		95DA40911A2901C0001D1E20 /* DepartureTimeFormatterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DepartureTimeFormatterTests.m; sourceTree = "<group>"; };
@@ -177,6 +178,7 @@
 				9581B5371A287BCB00DCA4D3 /* Main.storyboard */,
 				9581B52B1A287BCB00DCA4D3 /* Supporting Files */,
 				95BBBEB31A3722C700AB3454 /* IVUDepartureDownloader.h */,
+				95BBBEB61A3727CE00AB3454 /* IVUDepartureDownloaderDelegate.h */,
 				95BBBEB41A3722C700AB3454 /* IVUDepartureDownloader.m */,
 			);
 			path = aWall;

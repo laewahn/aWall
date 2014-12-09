@@ -8,6 +8,8 @@
 
 #import "AWViewController.h"
 
+#import "IVUDepartureDownloader.h"
+
 @implementation AWViewController
 
 - (void)viewDidLoad {

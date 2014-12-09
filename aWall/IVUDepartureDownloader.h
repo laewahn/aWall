@@ -8,12 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@class IVUDepartureDownloader;
-
-@protocol IVUDepartureDownloaderDelegate <NSObject>
-- (void)downloader:(IVUDepartureDownloader *)downloader finishedLoadingDeparturesData:(NSData *)data;
-@end
-
+#import "IVUDepartureDownloaderDelegate.h"
 
 @interface IVUDepartureDownloader : NSObject
 
