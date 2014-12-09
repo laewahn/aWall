@@ -9,6 +9,7 @@
 #import "AWViewController.h"
 
 #import "DepartureDownloader.h"
+#import "DepartureParser.h"
 
 @implementation AWViewController
 
@@ -48,7 +49,8 @@
 
 - (void)downloader:(DepartureDownloader *)downloader finishedLoadingDeparturesData:(NSData *)data
 {
-    NSArray* unsortedDepartures = [self parseDepartureData:data];
+    DepartureParser* parser = [[DepartureParser alloc] init];
+    NSArray* unsortedDepartures = [parser parseDepartureData:data];
     
     NSSortDescriptor* sortByDepartureTime = [NSSortDescriptor sortDescriptorWithKey:@"departure" ascending:YES];
     NSArray* sortedDepartures = [unsortedDepartures sortedArrayUsingDescriptors:@[sortByDepartureTime]];

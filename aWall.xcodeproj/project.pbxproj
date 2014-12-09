@@ -19,6 +19,7 @@
 		9581B5391A287BCB00DCA4D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9581B5371A287BCB00DCA4D3 /* Main.storyboard */; };
 		9581B5451A287BCB00DCA4D3 /* aWallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9581B5441A287BCB00DCA4D3 /* aWallTests.m */; };
 		95BBBEB51A3722C700AB3454 /* DepartureDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BBBEB41A3722C700AB3454 /* DepartureDownloader.m */; };
+		95BBBEB91A37295700AB3454 /* DepartureParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BBBEB81A37295700AB3454 /* DepartureParser.m */; };
 		95DA40901A29005B001D1E20 /* DepartureTimeFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DA408F1A29005B001D1E20 /* DepartureTimeFormatter.m */; };
 		95DA40921A2901C1001D1E20 /* DepartureTimeFormatterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DA40911A2901C0001D1E20 /* DepartureTimeFormatterTests.m */; };
 		95DA40951A2B403B001D1E20 /* NextDepartureFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DA40941A2B403B001D1E20 /* NextDepartureFormatter.m */; };
@@ -67,6 +68,8 @@
 		95BBBEB31A3722C700AB3454 /* DepartureDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DepartureDownloader.h; sourceTree = "<group>"; };
 		95BBBEB41A3722C700AB3454 /* DepartureDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DepartureDownloader.m; sourceTree = "<group>"; };
 		95BBBEB61A3727CE00AB3454 /* DepartureDownloaderDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DepartureDownloaderDelegate.h; sourceTree = "<group>"; };
+		95BBBEB71A37295700AB3454 /* DepartureParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DepartureParser.h; sourceTree = "<group>"; };
+		95BBBEB81A37295700AB3454 /* DepartureParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DepartureParser.m; sourceTree = "<group>"; };
 		95DA408E1A29005B001D1E20 /* DepartureTimeFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DepartureTimeFormatter.h; sourceTree = "<group>"; };
 		95DA408F1A29005B001D1E20 /* DepartureTimeFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DepartureTimeFormatter.m; sourceTree = "<group>"; };
 		95DA40911A2901C0001D1E20 /* DepartureTimeFormatterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DepartureTimeFormatterTests.m; sourceTree = "<group>"; };
@@ -180,6 +183,8 @@
 				95BBBEB61A3727CE00AB3454 /* DepartureDownloaderDelegate.h */,
 				95BBBEB31A3722C700AB3454 /* DepartureDownloader.h */,
 				95BBBEB41A3722C700AB3454 /* DepartureDownloader.m */,
+				95BBBEB71A37295700AB3454 /* DepartureParser.h */,
+				95BBBEB81A37295700AB3454 /* DepartureParser.m */,
 			);
 			path = aWall;
 			sourceTree = "<group>";
@@ -401,6 +406,7 @@
 				9581B5341A287BCB00DCA4D3 /* AWViewController.m in Sources */,
 				9581B5311A287BCB00DCA4D3 /* main.m in Sources */,
 				95DA40901A29005B001D1E20 /* DepartureTimeFormatter.m in Sources */,
+				95BBBEB91A37295700AB3454 /* DepartureParser.m in Sources */,
 				95DA40951A2B403B001D1E20 /* NextDepartureFormatter.m in Sources */,
 				95BBBEB51A3722C700AB3454 /* DepartureDownloader.m in Sources */,
 				9581B52F1A287BCB00DCA4D3 /* AppDelegate.m in Sources */,
