@@ -16,15 +16,24 @@
     NSTimer* updateTimer = [NSTimer scheduledTimerWithTimeInterval:20 target:self selector:@selector(loadAndUpdateDepartures) userInfo:nil repeats:YES];
     [self setDeparturesUpdateTimer:updateTimer];
     
-    [self setDownloader:[IVUDepartureDownloader new]];
-    [self.downloader setDelegate:self];
-    
     [self loadAndUpdateDepartures];
 }
 
 - (IBAction)refreshDepartureDataButtonPressed:(id)sender
 {
     [self loadAndUpdateDepartures];
+}
+
+- (IVUDepartureDownloader *)downloader
+{
+    if (_downloader == nil) {
+        IVUDepartureDownloader* downloader = [[IVUDepartureDownloader alloc] init];
+        [downloader setDelegate:self];
+        
+        _downloader = downloader;
+    }
+    
+    return _downloader;
 }
 
 - (void)downloader:(IVUDepartureDownloader *)downloader finishedLoadingDeparturesData:(NSData *)data
