@@ -8,7 +8,7 @@
 
 #import "AWViewController.h"
 
-#import "IVUDepartureDownloader.h"
+#import "DepartureDownloader.h"
 
 @implementation AWViewController
 
@@ -30,10 +30,10 @@
 # pragma mark -
 # pragma mark Property implementation
 
-- (IVUDepartureDownloader *)downloader
+- (DepartureDownloader *)downloader
 {
     if (_downloader == nil) {
-        IVUDepartureDownloader* downloader = [[IVUDepartureDownloader alloc] init];
+        DepartureDownloader* downloader = [[DepartureDownloader alloc] init];
         [downloader setDelegate:self];
         
         _downloader = downloader;
@@ -44,9 +44,9 @@
 
 
 # pragma mark -
-# pragma mark IVUDepartureDownloaderDelegate implementation
+# pragma mark DepartureDownloaderDelegate implementation
 
-- (void)downloader:(IVUDepartureDownloader *)downloader finishedLoadingDeparturesData:(NSData *)data
+- (void)downloader:(DepartureDownloader *)downloader finishedLoadingDeparturesData:(NSData *)data
 {
     NSArray* unsortedDepartures = [self parseDepartureData:data];
     

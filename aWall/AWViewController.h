@@ -8,13 +8,13 @@
 
 #import <Cocoa/Cocoa.h>
 
-#import "IVUDepartureDownloaderDelegate.h"
+#import "DepartureDownloaderDelegate.h"
 
-@class IVUDepartureDownloader;
+@class DepartureDownloader;
 
-@interface AWViewController : NSViewController<IVUDepartureDownloaderDelegate>
+@interface AWViewController : NSViewController<DepartureDownloaderDelegate>
 
-@property(nonatomic, strong) IVUDepartureDownloader* downloader;
+@property(nonatomic, strong) DepartureDownloader* downloader;
 @property(nonatomic, strong) NSTimer* departuresUpdateTimer;
 @property(nonatomic, strong) NSDictionary* nextDeparture;
 

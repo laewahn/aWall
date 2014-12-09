@@ -1,16 +1,16 @@
 //
-//  IVUDepartureDownloader.m
+//  DepartureDownloader.m
 //  aWall
 //
 //  Created by Dennis Lewandowski on 09/12/14.
 //  Copyright (c) 2014 laewahn. All rights reserved.
 //
 
-#import "IVUDepartureDownloader.h"
+#import "DepartureDownloader.h"
 
 NSString * const kDeparturesEndpointURLFormatString = @"http://ivu.aseag.de/interfaces/ura/instant_V1?ReturnList=LineID,Latitude,Longitude,DestinationText,EstimatedTime&StopID=%@";
 
-@implementation IVUDepartureDownloader
+@implementation DepartureDownloader
 
 - (void)downloadDeparturesForStopWithID:(NSString *)stopID
 {

@@ -1,5 +1,5 @@
 //
-//  IVUDepartureDownloader.h
+//  DepartureDownloader.h
 //  aWall
 //
 //  Created by Dennis Lewandowski on 09/12/14.
@@ -8,13 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
-#import "IVUDepartureDownloaderDelegate.h"
+#import "DepartureDownloaderDelegate.h"
 
-@interface IVUDepartureDownloader : NSObject
+@interface DepartureDownloader : NSObject
 
 - (void)downloadDeparturesForStopWithID:(NSString *)stopID;
 
 @property(nonatomic, strong) NSURLSession* downloadSession;
-@property(nonatomic, assign) id<IVUDepartureDownloaderDelegate> delegate;
+@property(nonatomic, assign) id<DepartureDownloaderDelegate> delegate;
 
 @end

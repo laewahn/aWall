@@ -18,7 +18,7 @@
 		9581B5361A287BCB00DCA4D3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9581B5351A287BCB00DCA4D3 /* Images.xcassets */; };
 		9581B5391A287BCB00DCA4D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9581B5371A287BCB00DCA4D3 /* Main.storyboard */; };
 		9581B5451A287BCB00DCA4D3 /* aWallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9581B5441A287BCB00DCA4D3 /* aWallTests.m */; };
-		95BBBEB51A3722C700AB3454 /* IVUDepartureDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BBBEB41A3722C700AB3454 /* IVUDepartureDownloader.m */; };
+		95BBBEB51A3722C700AB3454 /* DepartureDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BBBEB41A3722C700AB3454 /* DepartureDownloader.m */; };
 		95DA40901A29005B001D1E20 /* DepartureTimeFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DA408F1A29005B001D1E20 /* DepartureTimeFormatter.m */; };
 		95DA40921A2901C1001D1E20 /* DepartureTimeFormatterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DA40911A2901C0001D1E20 /* DepartureTimeFormatterTests.m */; };
 		95DA40951A2B403B001D1E20 /* NextDepartureFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DA40941A2B403B001D1E20 /* NextDepartureFormatter.m */; };
@@ -64,9 +64,9 @@
 		9581B53E1A287BCB00DCA4D3 /* aWallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = aWallTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9581B5431A287BCB00DCA4D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9581B5441A287BCB00DCA4D3 /* aWallTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = aWallTests.m; sourceTree = "<group>"; };
-		95BBBEB31A3722C700AB3454 /* IVUDepartureDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVUDepartureDownloader.h; sourceTree = "<group>"; };
-		95BBBEB41A3722C700AB3454 /* IVUDepartureDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVUDepartureDownloader.m; sourceTree = "<group>"; };
-		95BBBEB61A3727CE00AB3454 /* IVUDepartureDownloaderDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IVUDepartureDownloaderDelegate.h; sourceTree = "<group>"; };
+		95BBBEB31A3722C700AB3454 /* DepartureDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DepartureDownloader.h; sourceTree = "<group>"; };
+		95BBBEB41A3722C700AB3454 /* DepartureDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DepartureDownloader.m; sourceTree = "<group>"; };
+		95BBBEB61A3727CE00AB3454 /* DepartureDownloaderDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DepartureDownloaderDelegate.h; sourceTree = "<group>"; };
 		95DA408E1A29005B001D1E20 /* DepartureTimeFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DepartureTimeFormatter.h; sourceTree = "<group>"; };
 		95DA408F1A29005B001D1E20 /* DepartureTimeFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DepartureTimeFormatter.m; sourceTree = "<group>"; };
 		95DA40911A2901C0001D1E20 /* DepartureTimeFormatterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DepartureTimeFormatterTests.m; sourceTree = "<group>"; };
@@ -177,9 +177,9 @@
 				9581B5351A287BCB00DCA4D3 /* Images.xcassets */,
 				9581B5371A287BCB00DCA4D3 /* Main.storyboard */,
 				9581B52B1A287BCB00DCA4D3 /* Supporting Files */,
-				95BBBEB31A3722C700AB3454 /* IVUDepartureDownloader.h */,
-				95BBBEB61A3727CE00AB3454 /* IVUDepartureDownloaderDelegate.h */,
-				95BBBEB41A3722C700AB3454 /* IVUDepartureDownloader.m */,
+				95BBBEB61A3727CE00AB3454 /* DepartureDownloaderDelegate.h */,
+				95BBBEB31A3722C700AB3454 /* DepartureDownloader.h */,
+				95BBBEB41A3722C700AB3454 /* DepartureDownloader.m */,
 			);
 			path = aWall;
 			sourceTree = "<group>";
@@ -402,7 +402,7 @@
 				9581B5311A287BCB00DCA4D3 /* main.m in Sources */,
 				95DA40901A29005B001D1E20 /* DepartureTimeFormatter.m in Sources */,
 				95DA40951A2B403B001D1E20 /* NextDepartureFormatter.m in Sources */,
-				95BBBEB51A3722C700AB3454 /* IVUDepartureDownloader.m in Sources */,
+				95BBBEB51A3722C700AB3454 /* DepartureDownloader.m in Sources */,
 				9581B52F1A287BCB00DCA4D3 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
