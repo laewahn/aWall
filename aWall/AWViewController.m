@@ -8,6 +8,8 @@
 
 #import "AWViewController.h"
 
+#import "DepartureDownloader.h"
+#import "DepartureParser.h"
 
 @implementation AWViewController
 
@@ -20,36 +22,56 @@
     [self loadAndUpdateDepartures];
 }
 
-- (IBAction)refreshDepartureDataButtonPressed:(id)sender
-{
-    [self loadAndUpdateDepartures];
-}
-
 - (void)loadAndUpdateDepartures
 {
-    NSURLSession* departuresDownloadSession = [NSURLSession sharedSession];
-    
-    NSURL* departuresEndpointURL = [NSURL URLWithString:@"http://ivu.aseag.de/interfaces/ura/instant_V1?ReturnList=LineID,Latitude,Longitude,DestinationText,EstimatedTime&StopID=100625"];
-    NSURLRequest* departuresInfoRequest = [NSURLRequest requestWithURL:departuresEndpointURL];
-    
-    NSURLSessionDataTask* departureDownloadTask = [departuresDownloadSession dataTaskWithRequest:departuresInfoRequest completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-        NSArray* unsortedDepartures = [self parseDepartureData:data];
-        
-        NSSortDescriptor* sortByDepartureTime = [NSSortDescriptor sortDescriptorWithKey:@"departure" ascending:YES];
-        NSArray* sortedDepartures = [unsortedDepartures sortedArrayUsingDescriptors:@[sortByDepartureTime]];
-        
-        NSPredicate* pendingDeparturesFilter = [NSPredicate predicateWithFormat:@"departure >= %@", [NSDate date]];
-        NSArray* pendingDepartures = [sortedDepartures filteredArrayUsingPredicate:pendingDeparturesFilter];
-        
-        NSDictionary* nextDeparture = [pendingDepartures firstObject];
-        NSArray* departuresForList = [pendingDepartures subarrayWithRange:NSMakeRange(1, [pendingDepartures count] -1)];
-        
-        [self performSelectorOnMainThread:@selector(setRepresentedObject:) withObject:departuresForList waitUntilDone:YES];
-        [self performSelectorOnMainThread:@selector(setNextDeparture:) withObject:nextDeparture waitUntilDone:YES];
-    }];
-    
-    [departureDownloadTask resume];
+    [self.downloader downloadDeparturesForStopWithID:@"100625"];
 }
+
+
+# pragma mark -
+# pragma mark Property implementation
+
+- (DepartureDownloader *)downloader
+{
+    if (_downloader == nil) {
+        DepartureDownloader* downloader = [[DepartureDownloader alloc] init];
+        [downloader setDelegate:self];
+        
+        _downloader = downloader;
+    }
+    
+    return _downloader;
+}
+
+
+# pragma mark -
+# pragma mark DepartureDownloaderDelegate implementation
+
+- (void)downloader:(DepartureDownloader *)downloader finishedLoadingDeparturesData:(NSData *)data
+{
+    DepartureParser* parser = [[DepartureParser alloc] init];
+    NSArray* unsortedDepartures = [parser parseDepartureData:data];
+    
+    if ([unsortedDepartures count] == 0) {
+        return;
+    }
+    
+    NSSortDescriptor* sortByDepartureTime = [NSSortDescriptor sortDescriptorWithKey:@"departure" ascending:YES];
+    NSArray* sortedDepartures = [unsortedDepartures sortedArrayUsingDescriptors:@[sortByDepartureTime]];
+    
+    NSPredicate* pendingDeparturesFilter = [NSPredicate predicateWithFormat:@"departure >= %@", [NSDate date]];
+    NSArray* pendingDepartures = [sortedDepartures filteredArrayUsingPredicate:pendingDeparturesFilter];
+    
+    NSDictionary* nextDeparture = [pendingDepartures firstObject];
+    NSArray* departuresForList = [pendingDepartures subarrayWithRange:NSMakeRange(1, [pendingDepartures count] -1)];
+    
+    [self performSelectorOnMainThread:@selector(setRepresentedObject:) withObject:departuresForList waitUntilDone:YES];
+    [self performSelectorOnMainThread:@selector(setNextDeparture:) withObject:nextDeparture waitUntilDone:YES];
+}
+
+
+# pragma mark -
+# pragma mark Data parsing
 
 - (NSArray *)parseDepartureData:(NSData *)downloadData
 {
