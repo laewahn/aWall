@@ -12,6 +12,7 @@
 		956A84951A2CF7020034DD06 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 956A84941A2CF7020034DD06 /* Images.xcassets */; };
 		956A84981A2CF7020034DD06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 956A84961A2CF7020034DD06 /* Main.storyboard */; };
 		956A84A41A2CF7020034DD06 /* iSeag_MenuIconTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 956A84A31A2CF7020034DD06 /* iSeag_MenuIconTests.m */; };
+		95759BE51C90626000059B70 /* DepartureParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95759BE41C90626000059B70 /* DepartureParserTests.m */; };
 		9581B52F1A287BCB00DCA4D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9581B52E1A287BCB00DCA4D3 /* AppDelegate.m */; };
 		9581B5311A287BCB00DCA4D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9581B5301A287BCB00DCA4D3 /* main.m */; };
 		9581B5341A287BCB00DCA4D3 /* AWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9581B5331A287BCB00DCA4D3 /* AWViewController.m */; };
@@ -53,6 +54,7 @@
 		956A849D1A2CF7020034DD06 /* iSeag MenuIconTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iSeag MenuIconTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		956A84A21A2CF7020034DD06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		956A84A31A2CF7020034DD06 /* iSeag_MenuIconTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iSeag_MenuIconTests.m; sourceTree = "<group>"; };
+		95759BE41C90626000059B70 /* DepartureParserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DepartureParserTests.m; sourceTree = "<group>"; };
 		9581B5281A287BCB00DCA4D3 /* aWall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aWall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9581B52C1A287BCB00DCA4D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9581B52D1A287BCB00DCA4D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 				9581B5441A287BCB00DCA4D3 /* aWallTests.m */,
 				95DA40911A2901C0001D1E20 /* DepartureTimeFormatterTests.m */,
 				9581B5421A287BCB00DCA4D3 /* Supporting Files */,
+				95759BE41C90626000059B70 /* DepartureParserTests.m */,
 			);
 			path = aWallTests;
 			sourceTree = "<group>";
@@ -306,7 +309,7 @@
 		9581B5201A287BCB00DCA4D3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = laewahn;
 				TargetAttributes = {
 					956A84871A2CF7020034DD06 = {
@@ -419,6 +422,7 @@
 			files = (
 				95DA40921A2901C1001D1E20 /* DepartureTimeFormatterTests.m in Sources */,
 				9581B5451A287BCB00DCA4D3 /* aWallTests.m in Sources */,
+				95759BE51C90626000059B70 /* DepartureParserTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +472,7 @@
 				);
 				INFOPLIST_FILE = "iSeag MenuIcon/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.laewahn.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -479,6 +484,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "iSeag MenuIcon/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.laewahn.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -498,6 +504,7 @@
 				);
 				INFOPLIST_FILE = "iSeag MenuIconTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.laewahn.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iSeag MenuIcon.app/Contents/MacOS/iSeag MenuIcon";
 			};
@@ -514,6 +521,7 @@
 				);
 				INFOPLIST_FILE = "iSeag MenuIconTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.laewahn.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iSeag MenuIcon.app/Contents/MacOS/iSeag MenuIcon";
 			};
@@ -539,6 +547,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -602,6 +611,8 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = aWall/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.laewahn.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -613,6 +624,8 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = aWall/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.laewahn.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -632,6 +645,7 @@
 				);
 				INFOPLIST_FILE = aWallTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.laewahn.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/aWall.app/Contents/MacOS/aWall";
 			};
@@ -648,6 +662,7 @@
 				);
 				INFOPLIST_FILE = aWallTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.laewahn.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/aWall.app/Contents/MacOS/aWall";
 			};
