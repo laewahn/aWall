@@ -52,6 +52,10 @@
     DepartureParser* parser = [[DepartureParser alloc] init];
     NSArray* unsortedDepartures = [parser parseDepartureData:data];
     
+    if ([unsortedDepartures count] == 0) {
+        return;
+    }
+    
     NSSortDescriptor* sortByDepartureTime = [NSSortDescriptor sortDescriptorWithKey:@"departure" ascending:YES];
     NSArray* sortedDepartures = [unsortedDepartures sortedArrayUsingDescriptors:@[sortByDepartureTime]];
     
